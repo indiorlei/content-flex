@@ -43,9 +43,8 @@ table {
 // end reset
 //
 header {
-	height: 100vh;
-	background: url(http://wallpaperwarrior.com/wp-content/uploads/2016/09/Wallpaper-20.jpg) no-repeat center;
-	background-size: cover;
+	height: 100%;
+	background-color: #00314B;
 }
 nav {
 	display: flex;
@@ -82,5 +81,44 @@ nav {
 		flex-direction: column;
 		align-itens: center;
 		width: 100%;
+	}
+}
+// CONTENT
+main {
+	height: 90vh;
+	background-color: #00312d;
+
+	section {
+		height: 500px;
+		background-color: red;
+		display: flex;
+		flex-direction: row; /* row, column, row-reverse, column-reverse */
+		flex-wrap: wrap; /* wrap, wrap-reverse, no-wrap */
+		justify-content: space-between; /* flex-start, flex-end, space-between, space-around */
+		align-items: center; /* flex-start, flex-end, center, strech, baseline */
+		
+		.item {
+			width: 100px;
+			height: 100px;
+			color: #000;
+			background-color: #6CFFFF;
+			margin: 5px;
+
+			&:nth-child(1){
+				order: 4
+			}
+
+			&:nth-child(2){
+				order: 3
+			}
+
+			&:nth-child(3){
+				order: 1
+			}
+
+			&:nth-child(4){
+				order: 2
+			}
+		}
 	}
 }
